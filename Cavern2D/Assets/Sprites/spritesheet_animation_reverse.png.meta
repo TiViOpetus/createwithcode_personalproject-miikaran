@@ -1,0 +1,768 @@
+fileFormatVersion: 2
+guid: 46c46459963399b4c9d8731df5d4d917
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4571845397277242731
+    second: spritesheet_animation_reverse_0
+  - first:
+      213: 1920957155683839560
+    second: spritesheet_animation_reverse_1
+  - first:
+      213: -8304835249356211644
+    second: spritesheet_animation_reverse_2
+  - first:
+      213: -6027104940707766476
+    second: spritesheet_animation_reverse_3
+  - first:
+      213: 6579570495237329494
+    second: spritesheet_animation_reverse_4
+  - first:
+      213: 2562479084620192052
+    second: spritesheet_animation_reverse_5
+  - first:
+      213: -8804497136621584713
+    second: spritesheet_animation_reverse_6
+  - first:
+      213: 5083598207394756146
+    second: spritesheet_animation_reverse_7
+  - first:
+      213: 7324638633689631629
+    second: spritesheet_animation_reverse_8
+  - first:
+      213: 5241175318612626527
+    second: spritesheet_animation_reverse_9
+  - first:
+      213: -1350051956309294680
+    second: spritesheet_animation_reverse_10
+  - first:
+      213: 6742127422369661443
+    second: spritesheet_animation_reverse_11
+  - first:
+      213: 6301556836940480458
+    second: spritesheet_animation_reverse_12
+  - first:
+      213: 335050702131203356
+    second: spritesheet_animation_reverse_13
+  - first:
+      213: 717212794957407795
+    second: spritesheet_animation_reverse_14
+  - first:
+      213: -1745933301576653582
+    second: spritesheet_animation_reverse_15
+  - first:
+      213: -744440636675478351
+    second: spritesheet_animation_reverse_16
+  - first:
+      213: 8794883249897788161
+    second: spritesheet_animation_reverse_17
+  - first:
+      213: 7860809434752091778
+    second: spritesheet_animation_reverse_18
+  - first:
+      213: -6796532238429423261
+    second: spritesheet_animation_reverse_19
+  - first:
+      213: -315764760992009031
+    second: spritesheet_animation_reverse_20
+  - first:
+      213: 2138379646484144486
+    second: spritesheet_animation_reverse_21
+  - first:
+      213: -92854122313373628
+    second: spritesheet_animation_reverse_22
+  - first:
+      213: 4103245936070409048
+    second: spritesheet_animation_reverse_23
+  - first:
+      213: -4871771230732822183
+    second: spritesheet_animation_reverse_24
+  - first:
+      213: 8796154377829993373
+    second: spritesheet_animation_reverse_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 512
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65f6b88a25727f30800000000000000
+      internalID: 4571845397277242731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 447
+        width: 72
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ea74dfa5c98aa10800000000000000
+      internalID: 1920957155683839560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 485
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44afaf3775c4fbc80800000000000000
+      internalID: -8304835249356211644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_3
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 429
+        width: 69
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f9c194dfb6b5ca0800000000000000
+      internalID: -6027104940707766476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 420
+        width: 69
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652134f51845f4b50800000000000000
+      internalID: 6579570495237329494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_5
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 432
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439972f9621cf8320800000000000000
+      internalID: 2562479084620192052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_6
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 432
+        width: 66
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bef9b1a08420d580800000000000000
+      internalID: -8804497136621584713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_7
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 458
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236b394b2a19c8640800000000000000
+      internalID: 5083598207394756146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_8
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 431
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b4c2d970856a560800000000000000
+      internalID: 7324638633689631629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_9
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 414
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c437fee256cb840800000000000000
+      internalID: 5241175318612626527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_10
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 414
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a10ddb06e6a34de0800000000000000
+      internalID: -1350051956309294680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_11
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 401
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30283c85b29d09d50800000000000000
+      internalID: 6742127422369661443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_12
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 308
+        width: 69
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf75cd5e80a37750800000000000000
+      internalID: 6301556836940480458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_13
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 309
+        width: 84
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d8642a6d656a400800000000000000
+      internalID: 335050702131203356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_14
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 309
+        width: 63
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3362dcfac3d04f900800000000000000
+      internalID: 717212794957407795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_15
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 309
+        width: 78
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4affd99e235c7e0800000000000000
+      internalID: -1745933301576653582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_16
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 213
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bca7966f273ba5f0800000000000000
+      internalID: -744440636675478351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_17
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 210
+        width: 60
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103d03fe7b3bd0a70800000000000000
+      internalID: 8794883249897788161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_18
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 210
+        width: 57
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28600755884371d60800000000000000
+      internalID: 7860809434752091778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_19
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 210
+        width: 54
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3697cef40fddda1a0800000000000000
+      internalID: -6796532238429423261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_20
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 213
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b43c747f9d2e9bf0800000000000000
+      internalID: -315764760992009031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_21
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 213
+        width: 81
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661ec9775fc0dad10800000000000000
+      internalID: 2138379646484144486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_22
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 210
+        width: 69
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448a49feaad16bef0800000000000000
+      internalID: -92854122313373628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_23
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 90
+        width: 69
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85bba8d5078a1f830800000000000000
+      internalID: 4103245936070409048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_24
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 105
+        width: 81
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959d33d90edf36cb0800000000000000
+      internalID: -4871771230732822183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_animation_reverse_25
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 105
+        width: 87
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9bcd087dc7321a70800000000000000
+      internalID: 8796154377829993373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
