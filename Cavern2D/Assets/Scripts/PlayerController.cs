@@ -8,18 +8,18 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rigidBody2d;
     private BoxCollider2D boxCollider2d;
     private float moveInput;
-    private float speed = 14f;
+    public float speed = 14f;
+    bool doubleJump;
+    private Animator animator;
 
 
 
 
     // Start is called before the first frame update.
 
-    private Animator anim;
-
     void Start()
     {
-        anim = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         rigidBody2d = GetComponent<Rigidbody2D>();
         boxCollider2d = transform.GetComponent<BoxCollider2D>();
 
@@ -28,11 +28,8 @@ public class PlayerController : MonoBehaviour
 
 
 
-    // Spriten hyppy ja liikkumis mekaniikat. jumpVelocitylla voidaan saataa hypyn korkeutta
-    // Animator muuttujilla saadaan spriten juoksu, hyppy ja tippumis animaatiot toimimaan
-
-
-    public Animator animator;
+    // Players movement mechanics. with jumpVelocity you can change and adjust height of the jump.
+    // Animator variables runs sprite animations when jumping, running, falling etc.
 
     private void Update()
     {
@@ -42,25 +39,31 @@ public class PlayerController : MonoBehaviour
         moveInput = Input.GetAxis("Horizontal");
         rigidBody2d.velocity = new Vector2(moveInput * speed, rigidBody2d.velocity.y);
 
-        if (SpriteGround() && Input.GetKeyDown(KeyCode.Space))
+        if (isGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
-            float jumpVelocity = 32f;
+            float jumpVelocity = 25f;
             rigidBody2d.velocity = Vector2.up * jumpVelocity;
+            doubleJump = true;
 
+        }
+        else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if(doubleJump)
+            {
+                float jumpVelocity = 20f;
+                rigidBody2d.velocity = Vector2.up * jumpVelocity;
+                doubleJump = false;
 
-            // Asettaa Verticalin animointiin.
-
-            animator.SetFloat("Vertical", rigidBody2d.velocity.y);
-
-
+            }
         }
     }
 
 
-    // SpriteMaassa estaa hyppaamisen jos olet ilmassa, eli pystyt hyppaamaan uusiksi vasta kun olet laskeutunut.
+    // SpriteGround prevents you from jumping while in air. You can jump again only when you've landed.
+    // Only way to jump while in air is by doubleJumping.
 
 
-    private bool SpriteGround()
+    private bool isGrounded()
     {
         RaycastHit2D rayCastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.down, .1f, setLayerMask);
         Debug.Log(rayCastHit2d.collider);
