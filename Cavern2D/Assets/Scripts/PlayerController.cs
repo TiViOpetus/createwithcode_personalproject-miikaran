@@ -12,9 +12,6 @@ public class PlayerController : MonoBehaviour
     bool doubleJump;
     private Animator animator;
 
-
-
-
     // Start is called before the first frame update.
 
     void Start()
@@ -34,7 +31,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
 
-        animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));   
+        animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
 
         moveInput = Input.GetAxis("Horizontal");
         rigidBody2d.velocity = new Vector2(moveInput * speed, rigidBody2d.velocity.y);
@@ -48,7 +45,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
-            if(doubleJump)
+            if (doubleJump)
             {
                 float jumpVelocity = 20f;
                 rigidBody2d.velocity = Vector2.up * jumpVelocity;
@@ -59,7 +56,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    // SpriteGround prevents you from jumping while in air. You can jump again only when you've landed.
+    // isGrounded prevents you from jumping while in air. You can jump again only when you've landed.
     // Only way to jump while in air is by doubleJumping.
 
 

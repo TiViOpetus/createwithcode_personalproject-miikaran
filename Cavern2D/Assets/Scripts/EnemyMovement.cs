@@ -20,11 +20,11 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Swarm();
+        Enemy();
     }
 
 
-    private void Swarm()
+    private void Enemy()
     {
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
     }
