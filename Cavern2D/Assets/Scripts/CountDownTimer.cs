@@ -27,9 +27,14 @@ public class CountDownTimer : MonoBehaviour
        if (currentTime <= 0)
         {
             countDownText.color = Color.red;
+            countDownText.text = "Game over!";
             currentTime = 0;
+            
+            Debug.Break();
 
         }
+
+
         
     }
 

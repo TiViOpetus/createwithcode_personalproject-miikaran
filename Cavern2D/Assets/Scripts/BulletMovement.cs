@@ -15,11 +15,16 @@ public class BulletMovement : MonoBehaviour
 		rb.velocity = transform.right * speed;
 	}
 
-	void OnTriggerEnter2D(Collider2D hitInfo)
+	void OnTriggerEnter2D(Collider2D other)
 	{
 
-		Destroy(gameObject);
+		if (other.tag == "Enemy")
+
+		Destroy(other.gameObject);
+
+		else{
+			Destroy(gameObject);
+			
+		}		
 	}
-
-
 }

@@ -274,7 +274,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.42552555, y: 0.5}
   m_AnchorMax: {x: 0.42552555, y: 0.5}
-  m_AnchoredPosition: {x: -273.39978, y: 190.75}
+  m_AnchoredPosition: {x: -273.39978, y: 173}
   m_SizeDelta: {x: 88.2151, y: 73.1336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1289978439
@@ -546,6 +546,11 @@ MonoBehaviour:
 --- !u!4 &1805036171 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6810602197587140763, guid: 847e4ad77bdfa5b4a96115db426a8433, type: 3}
+  m_PrefabInstance: {fileID: 6810602197193820688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2140750704 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6810602197587140757, guid: 847e4ad77bdfa5b4a96115db426a8433, type: 3}
   m_PrefabInstance: {fileID: 6810602197193820688}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1270438217997643975
@@ -822,14 +827,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tilemaps
       objectReference: {fileID: 0}
-    - target: {fileID: 8409511527705385541, guid: 077824a885576cd48a9ddd25ebe76bbd, type: 3}
-      propertyPath: m_Size.x
-      value: 0.12503278
-      objectReference: {fileID: 0}
-    - target: {fileID: 8409511527705385541, guid: 077824a885576cd48a9ddd25ebe76bbd, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.01748361
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 077824a885576cd48a9ddd25ebe76bbd, type: 3}
 --- !u!1001 &3839668678962062768
@@ -839,6 +836,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 271642248, guid: 8f01edfea1c050040a9af78bf533d30c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2140750704}
     - target: {fileID: 3839668678690523953, guid: 8f01edfea1c050040a9af78bf533d30c, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -850,6 +851,14 @@ PrefabInstance:
     - target: {fileID: 3839668678690523956, guid: 8f01edfea1c050040a9af78bf533d30c, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3839668678690523956, guid: 8f01edfea1c050040a9af78bf533d30c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3839668678690523956, guid: 8f01edfea1c050040a9af78bf533d30c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3839668678690523956, guid: 8f01edfea1c050040a9af78bf533d30c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -900,6 +909,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1242717914, guid: 3b9e89a204591aa4183dcfb99ee8c38f, type: 3}
+      propertyPath: m_Size.y
+      value: 0.016244672
+      objectReference: {fileID: 0}
+    - target: {fileID: 1242717914, guid: 3b9e89a204591aa4183dcfb99ee8c38f, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.06279506
+      objectReference: {fileID: 0}
     - target: {fileID: 6106262219523450402, guid: 3b9e89a204591aa4183dcfb99ee8c38f, type: 3}
       propertyPath: m_Name
       value: Elevator2
@@ -961,17 +978,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6810602197587140762, guid: 847e4ad77bdfa5b4a96115db426a8433, type: 3}
-      propertyPath: m_Color.b
-      value: 0.6618903
+    - target: {fileID: 6810602197587140761, guid: 847e4ad77bdfa5b4a96115db426a8433, type: 3}
+      propertyPath: m_Size.x
+      value: 0.13394357
       objectReference: {fileID: 0}
-    - target: {fileID: 6810602197587140762, guid: 847e4ad77bdfa5b4a96115db426a8433, type: 3}
-      propertyPath: m_Color.g
-      value: 0.6618903
+    - target: {fileID: 6810602197587140761, guid: 847e4ad77bdfa5b4a96115db426a8433, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.009799378
       objectReference: {fileID: 0}
-    - target: {fileID: 6810602197587140762, guid: 847e4ad77bdfa5b4a96115db426a8433, type: 3}
-      propertyPath: m_Color.r
-      value: 0.6981132
+    - target: {fileID: 6810602197587140761, guid: 847e4ad77bdfa5b4a96115db426a8433, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6810602197587140763, guid: 847e4ad77bdfa5b4a96115db426a8433, type: 3}
       propertyPath: m_RootOrder
