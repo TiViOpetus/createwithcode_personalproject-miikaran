@@ -7,7 +7,6 @@ public class BulletMovement : MonoBehaviour
 
 	public float speed = 20f;
 	public Rigidbody2D rb;
-	public GameObject impactEffect;
 
 	// Use this for initialization
 	void Start()
@@ -19,10 +18,12 @@ public class BulletMovement : MonoBehaviour
 	{
 
 		if (other.tag == "Enemy")
+        {
+			Destroy(other.gameObject);
 
-		Destroy(other.gameObject);
-
-		else{
+		}
+		else
+		{
 			Destroy(gameObject);
 			
 		}		

@@ -8,6 +8,7 @@ TagManager:
   - RoofBlocks
   - FloorBlocks
   - RoofSpikes
+  - Bullet
   layers:
   - Default
   - TransparentFX
