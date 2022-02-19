@@ -5,6 +5,8 @@ using UnityEngine;
 public class DetectCollissions : MonoBehaviour
 {
 
+    public GameObject[] heart;
+
     void OnTriggerEnter2D(Collider2D other)
     {
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -20,7 +21,9 @@ public class HealthSystem : MonoBehaviour
     {
         if (dead == true)
         {
+
             Debug.Break();
+
         }
 
     }
@@ -31,12 +34,15 @@ public class HealthSystem : MonoBehaviour
         {
             health -= d;
             Destroy(heart[health].gameObject);
+      
 
         }
 
         if (health < 1)
         {
-            Debug.Break();
+
+            dead = true;
+
         }
 
     }
@@ -44,11 +50,22 @@ public class HealthSystem : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
  
-        if (other.tag == "Enemy")
+        if (other.tag == "Bullet")
         {
             TakeDamage(1);
        
         }
+
+        if (other.tag == "Enemy")
+        {
+            TakeDamage(1);
+        }
+        
+        else if (other.tag == "RoofSpikes")
+        {
+            TakeDamage(3);
+        }
+        
     }
 
 }

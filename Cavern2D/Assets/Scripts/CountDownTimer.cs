@@ -10,11 +10,13 @@ public class CountDownTimer : MonoBehaviour
     private Animation anim;
 
     [SerializeField] Text countDownText;
+    [SerializeField] Text GameOverText;
 
     void Start()
     {
 
         currentTime = startingTime;
+        GameOverText.enabled = false;
 
 
     }
@@ -27,8 +29,8 @@ public class CountDownTimer : MonoBehaviour
        if (currentTime <= 0)
         {
             countDownText.color = Color.red;
-            countDownText.text = "Game over!";
             currentTime = 0;
+            GameOverText.enabled = true;
             
             Debug.Break();
 
