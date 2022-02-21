@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
 
-    public float speed = 3.5f;
+    public float speed = 5f;
 
     [SerializeField]
 

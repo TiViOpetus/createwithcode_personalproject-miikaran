@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rigidBody2d;
     private BoxCollider2D boxCollider2d;
     private float moveInput;
-    public float speed = 14f;
+    public float speed = 15f;
     bool doubleJump;
     private Animator animator;
 

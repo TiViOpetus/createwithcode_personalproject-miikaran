@@ -6,13 +6,17 @@ using UnityEngine.UI;
 public class HealthSystem : MonoBehaviour
 {
     public GameObject[] heart;
-    private int health;
+    public int health;
+    private int maxHealth;
     private bool dead;
+    [SerializeField] Text deathText;
 
 
     private void Start()
     {
-        health = heart.Length;
+        health = 3;
+        maxHealth = health;
+        deathText.enabled = false;
     }
 
 
@@ -21,11 +25,8 @@ public class HealthSystem : MonoBehaviour
     {
         if (dead == true)
         {
-
             Debug.Break();
-
         }
-
     }
 
     public void TakeDamage(int d)
@@ -33,18 +34,15 @@ public class HealthSystem : MonoBehaviour
         if (health >= 1)
         {
             health -= d;
-            Destroy(heart[health].gameObject);
-      
-
+            //Destroy(heart[health].gameObject);
+            heart[health].gameObject.SetActive(false);
         }
 
         if (health < 1)
         {
-
             dead = true;
-
+            deathText.enabled = true;
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -52,21 +50,33 @@ public class HealthSystem : MonoBehaviour
  
         if (other.tag == "Bullet")
         {
-            TakeDamage(1);
-       
+            TakeDamage(1);       
         }
-
-        if (other.tag == "Enemy")
+        else if (other.tag == "Enemy")
         {
             TakeDamage(1);
         }
-        
+        else if (other.tag == "HealthBoost")
+        {
+            HealthBoost();
+            Destroy(other.gameObject);
+        }
         else if (other.tag == "RoofSpikes")
         {
             TakeDamage(3);
-        }
-        
+        }        
     }
 
+
+    public void HealthBoost()
+    {
+
+        if(health < maxHealth && dead == false)
+        {
+            heart[health].gameObject.SetActive(true);
+            health += 1;
+      
+        }
+    }
 }
 

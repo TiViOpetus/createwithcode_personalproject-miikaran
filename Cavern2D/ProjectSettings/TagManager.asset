@@ -9,6 +9,8 @@ TagManager:
   - FloorBlocks
   - RoofSpikes
   - Bullet
+  - Enemy2
+  - HealthBoost
   layers:
   - Default
   - TransparentFX
