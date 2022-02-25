@@ -9,7 +9,7 @@ public class EnemySpawn : MonoBehaviour
     private GameObject EnemyPrefab;
 
     [SerializeField]
-    private float EnemyInterval = 2f;
+    private float EnemyInterval = 1f;
 
 
     // Start is called before the first frame update
@@ -24,7 +24,7 @@ public class EnemySpawn : MonoBehaviour
     private IEnumerator SpawnEnemy(float interval, GameObject enemy)
     {
         yield return new WaitForSeconds(interval);
-        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(50f, 300f), Random.Range(50, 75f), 0), Quaternion.identity);
+        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(50f, 300f), Random.Range(50, 125f), 0), Quaternion.identity);
    
     }
 }

@@ -23,8 +23,6 @@ public class PlayerController : MonoBehaviour
     }
 
 
-
-
     // Players movement mechanics. with jumpVelocity you can change and adjust height of the jump.
     // Animator variables runs sprite animations when jumping, running, falling etc.
 
@@ -63,7 +61,6 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded()
     {
         RaycastHit2D rayCastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.down, .1f, setLayerMask);
-        Debug.Log(rayCastHit2d.collider);
         return rayCastHit2d.collider != null;
 
     }

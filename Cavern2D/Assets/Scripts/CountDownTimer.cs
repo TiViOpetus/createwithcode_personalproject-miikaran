@@ -14,29 +14,38 @@ public class CountDownTimer : MonoBehaviour
 
     void Start()
     {
-
         currentTime = startingTime;
         GameOverText.enabled = false;
-     
-
-
     }
 
     void Update()
     {
         currentTime -= 1 * Time.deltaTime;
-        countDownText.text = currentTime.ToString ("0.0");
+        countDownText.text = currentTime.ToString("0.0");
 
-       if (currentTime <= 0)
+        if (currentTime <= 0)
         {
             countDownText.color = Color.red;
             currentTime = 0;
             GameOverText.enabled = true;
-            
-            Debug.Break();
 
-        }
-        
+            Debug.Break();
+        }    
     }
 
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+
+        if (other.tag == "Player")
+        {
+            currentTime += 5;
+            countDownText.text = currentTime.ToString("0.0");
+            Destroy(gameObject);
+        }
+
+    }
 }
+
+
+    

@@ -228,7 +228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7327413213213541138
 RectTransform:
   m_ObjectHideFlags: 0
@@ -245,7 +245,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -160, y: 88.27573}
+  m_AnchoredPosition: {x: -160.83, y: -44.9}
   m_SizeDelta: {x: 160, y: 168.4814}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7327413213213541148
@@ -377,6 +377,7 @@ GameObject:
   - component: {fileID: 8342245658295378969}
   - component: {fileID: 8342245658295378968}
   - component: {fileID: 8342245658295378971}
+  - component: {fileID: 5534075257233137940}
   m_Layer: 5
   m_Name: CountDownText
   m_TagString: Untagged
@@ -400,7 +401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.42552555, y: 0.5}
   m_AnchorMax: {x: 0.42552555, y: 0.5}
-  m_AnchoredPosition: {x: -284, y: 190.75}
+  m_AnchoredPosition: {x: -275.45, y: 190.75}
   m_SizeDelta: {x: 88.2151, y: 73.1336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8342245658295378969
@@ -467,6 +468,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &5534075257233137940
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8342245658295378975}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &8342245658335176893
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,10 +581,9 @@ GameObject:
   - component: {fileID: 8342245658722150461}
   - component: {fileID: 8342245658722150460}
   - component: {fileID: 8342245658722150403}
-  - component: {fileID: 8342245658722150402}
   - component: {fileID: 8342245658722150463}
   m_Layer: 5
-  m_Name: Events
+  m_Name: UI-Events
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -653,20 +679,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8342245658722150402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8342245658722150401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce035d24b500b6d4d8f7d585452040cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countDownText: {fileID: 8342245658295378968}
-  GameOverText: {fileID: 8342245659136545514}
 --- !u!114 &8342245658722150463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -770,6 +782,7 @@ GameObject:
   - component: {fileID: 8342245659143576934}
   - component: {fileID: 8342245659143576928}
   - component: {fileID: 8342245659143576935}
+  - component: {fileID: 1657652300}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -838,6 +851,19 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 'SCORE: 00'
+--- !u!114 &1657652300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8342245659143576933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 957d3b3d329013d40909b9a9c823cc57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 8342245659143576935}
 --- !u!1 &8342245659248013415
 GameObject:
   m_ObjectHideFlags: 0
