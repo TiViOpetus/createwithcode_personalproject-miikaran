@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
 
         if (isGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
+        
             float jumpVelocity = 25f;
             rigidBody2d.velocity = Vector2.up * jumpVelocity;
             doubleJump = true;
@@ -60,7 +61,10 @@ public class PlayerController : MonoBehaviour
 
     private bool isGrounded()
     {
-        RaycastHit2D rayCastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.down, .1f, setLayerMask);
+    
+        RaycastHit2D rayCastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center,
+        boxCollider2d.bounds.size, 0f, Vector2.down, .1f, setLayerMask);
+
         return rayCastHit2d.collider != null;
 
     }

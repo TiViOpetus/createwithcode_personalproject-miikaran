@@ -18,10 +18,15 @@ public class CountDownTimer : MonoBehaviour
         GameOverText.enabled = false;
     }
 
+
+    //Timer decreases by seconds and updates time from currentTime to countDownText.
+    //Game ends when time is 0.
+
     void Update()
     {
         currentTime -= 1 * Time.deltaTime;
         countDownText.text = currentTime.ToString("0.0");
+        Debug.Log(currentTime);
 
         if (currentTime <= 0)
         {
@@ -34,18 +39,19 @@ public class CountDownTimer : MonoBehaviour
     }
 
 
+    //Adds time to timer when timer item collide with player.
+
     private void OnTriggerEnter2D(Collider2D other)
     {
 
         if (other.tag == "Player")
         {
-            currentTime += 5;
+            currentTime += 5 * Time.deltaTime;
             countDownText.text = currentTime.ToString("0.0");
+       
             Destroy(gameObject);
         }
 
     }
+
 }
-
-
-    

@@ -14,7 +14,7 @@ public class EnemyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+       player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -23,6 +23,8 @@ public class EnemyMovement : MonoBehaviour
         Enemy();
     }
 
+
+    //Moves to position where player is real time.
 
     private void Enemy()
     {

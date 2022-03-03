@@ -21,10 +21,16 @@ public class EnemySpawn : MonoBehaviour
         StartCoroutine(SpawnEnemy(EnemyInterval, EnemyPrefab));
     }
 
+
+    //Spawns enemies to specific position with interval/delay.
+
     private IEnumerator SpawnEnemy(float interval, GameObject enemy)
     {
+
         yield return new WaitForSeconds(interval);
+
         GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(50f, 300f), Random.Range(50, 125f), 0), Quaternion.identity);
+      
    
     }
 }

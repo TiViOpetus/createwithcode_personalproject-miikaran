@@ -18,6 +18,8 @@ public class PlayerShoot : MonoBehaviour
 		}
 	}
 
+	
+	//When shoot it spawns bulletPrab to the position of firepoint.
 	void Shoot()
 	{
 		Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);

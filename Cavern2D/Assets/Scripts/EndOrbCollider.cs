@@ -13,6 +13,7 @@ public class EndOrbCollider : MonoBehaviour
         winText.enabled = false;
     }
 
+    //When orb collides with player you win.
 
     void OnTriggerEnter2D(Collider2D other)
     {

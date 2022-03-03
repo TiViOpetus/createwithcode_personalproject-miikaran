@@ -7,9 +7,11 @@ public class GameScore : MonoBehaviour
 {
 
     public Text scoreText;
-    private int scoreNumber;
+    static private int scoreNumber;
 
  
+
+    //Adds score when enemy collides with enemies.
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Bullet")
@@ -19,13 +21,6 @@ public class GameScore : MonoBehaviour
             scoreText.text = "Score: " + scoreNumber;
 
         }
- 
-
-
-
-    
-  
-
 
     }
 

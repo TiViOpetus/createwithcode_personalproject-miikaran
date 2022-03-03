@@ -29,12 +29,13 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
+
     public void TakeDamage(int d)
     {
         if (health >= 1)
         {
             health -= d;
-            //Destroy(heart[health].gameObject);
+     
             heart[health].gameObject.SetActive(false);
         }
 
@@ -44,6 +45,10 @@ public class HealthSystem : MonoBehaviour
             deathText.enabled = true;
         }
     }
+
+
+    // If player collides with bullet, enemy or roofspikes health decreases by 1.
+    //When collide with healthboost health increases by 1. 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -67,6 +72,8 @@ public class HealthSystem : MonoBehaviour
         }        
     }
 
+
+    //Healthboost adds health by 1.
 
     public void HealthBoost()
     {
