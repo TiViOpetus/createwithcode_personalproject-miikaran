@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CountDownTimer : MonoBehaviour
 {
-    private float currentTime = 0f;
+    static private float currentTime = 0f;
     private float startingTime = 45f;
     private Animation anim;
 
@@ -26,7 +26,7 @@ public class CountDownTimer : MonoBehaviour
     {
         currentTime -= 1 * Time.deltaTime;
         countDownText.text = currentTime.ToString("0.0");
-        Debug.Log(currentTime);
+
 
         if (currentTime <= 0)
         {
@@ -35,23 +35,22 @@ public class CountDownTimer : MonoBehaviour
             GameOverText.enabled = true;
 
             Debug.Break();
-        }    
+        }
     }
 
-
-    //Adds time to timer when timer item collide with player.
 
     private void OnTriggerEnter2D(Collider2D other)
     {
 
         if (other.tag == "Player")
         {
-            currentTime += 5 * Time.deltaTime;
+            currentTime += 5;
             countDownText.text = currentTime.ToString("0.0");
-       
             Destroy(gameObject);
+
         }
 
     }
+
 
 }

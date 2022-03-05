@@ -11,10 +11,12 @@ GameObject:
   - component: {fileID: 8004068124767259170}
   - component: {fileID: 8004068124767259169}
   - component: {fileID: 8004068124767259168}
-  - component: {fileID: 8004068124767259171}
+  - component: {fileID: 1180945048}
+  - component: {fileID: 680123404034602711}
+  - component: {fileID: 1737728390}
   m_Layer: 0
   m_Name: TimerPotion
-  m_TagString: TimerBoost
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 8004068124767259167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.9, y: 4.4, z: 0}
-  m_LocalScale: {x: 3.239864, y: 2.8281138, z: 1}
+  m_LocalScale: {x: 1.0144014, y: 0.9123495, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -110,7 +112,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.32, y: 2.4}
   m_EdgeRadius: 0
---- !u!114 &8004068124767259171
+--- !u!114 &1180945048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8004068124767259167}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce035d24b500b6d4d8f7d585452040cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countDownText: {fileID: 0}
+  GameOverText: {fileID: 0}
+--- !u!114 &680123404034602711
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,8 +135,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 8004068124767259167}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce035d24b500b6d4d8f7d585452040cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2459e411faec412418b3dedb8ced72d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   countDownText: {fileID: 0}
   GameOverText: {fileID: 0}
+--- !u!114 &1737728390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8004068124767259167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703b2446e2bb77a4d86cc882eb8413f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerItem: {fileID: 8004068124767259167}
+  itemInterval: 2

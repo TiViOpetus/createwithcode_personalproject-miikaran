@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthItemSpawn : MonoBehaviour
+public class TimerItemSpawn : MonoBehaviour
 {
 
     [SerializeField]
-    private GameObject healthItem;
+    private GameObject timerItem;
 
     [SerializeField]
     private float itemInterval = 2f;
@@ -18,13 +18,13 @@ public class HealthItemSpawn : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(SpawnItem(itemInterval, healthItem));
+        StartCoroutine(SpawnItem(itemInterval, timerItem));
     }
 
-    private IEnumerator SpawnItem(float interval, GameObject HealthItem)
+    private IEnumerator SpawnItem(float interval, GameObject timerItem)
     {
         yield return new WaitForSeconds(interval);
-        GameObject newItem = Instantiate(HealthItem, new Vector3(Random.Range(50f, 100f), Random.Range(15, 60f), 0), Quaternion.identity);
+        GameObject newItem = Instantiate(timerItem, new Vector3(Random.Range(50f, 100f), Random.Range(15, 60f), 0), Quaternion.identity);
 
     }
 }
