@@ -9,7 +9,7 @@ public class TimerItemSpawn : MonoBehaviour
     private GameObject timerItem;
 
     [SerializeField]
-    private float itemInterval = 2f;
+    private float itemInterval = 4f;
 
 
     // Start is called before the first frame update

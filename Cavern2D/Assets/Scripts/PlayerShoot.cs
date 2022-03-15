@@ -8,6 +8,8 @@ public class PlayerShoot : MonoBehaviour
 	public Transform firePoint;
 	public GameObject bulletPrefab;
 
+	public AudioSource shootAudio;
+
 	// Update is called once per frame
 	void Update()
 	{
@@ -15,6 +17,7 @@ public class PlayerShoot : MonoBehaviour
 		if (Input.GetMouseButtonDown(0))
 		{
 			Shoot();
+			shootAudio.Play();
 		}
 	}
 

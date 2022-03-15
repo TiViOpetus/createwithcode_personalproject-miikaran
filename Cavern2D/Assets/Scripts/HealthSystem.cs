@@ -11,6 +11,8 @@ public class HealthSystem : MonoBehaviour
     private bool dead;
     [SerializeField] Text deathText;
 
+    public AudioSource deathAudio;
+
 
     private void Start()
     {
@@ -26,6 +28,7 @@ public class HealthSystem : MonoBehaviour
         if (dead == true)
         {
             Debug.Break();
+          
         }
     }
 
@@ -41,8 +44,10 @@ public class HealthSystem : MonoBehaviour
 
         if (health < 1)
         {
+       
             dead = true;
             deathText.enabled = true;
+            
         }
     }
 

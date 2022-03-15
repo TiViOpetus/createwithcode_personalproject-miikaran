@@ -12,10 +12,13 @@ public class PlayerController : MonoBehaviour
     bool doubleJump;
     private Animator animator;
 
+    public AudioSource jumpAudio;
+
     // Start is called before the first frame update.
 
     void Start()
     {
+
         animator = GetComponent<Animator>();
         rigidBody2d = GetComponent<Rigidbody2D>();
         boxCollider2d = transform.GetComponent<BoxCollider2D>();
@@ -41,6 +44,10 @@ public class PlayerController : MonoBehaviour
             rigidBody2d.velocity = Vector2.up * jumpVelocity;
             doubleJump = true;
 
+            jumpAudio.Play();
+
+   
+
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -49,6 +56,8 @@ public class PlayerController : MonoBehaviour
                 float jumpVelocity = 20f;
                 rigidBody2d.velocity = Vector2.up * jumpVelocity;
                 doubleJump = false;
+
+                jumpAudio.Play();
 
             }
         }
@@ -61,7 +70,7 @@ public class PlayerController : MonoBehaviour
 
     private bool isGrounded()
     {
-    
+        
         RaycastHit2D rayCastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center,
         boxCollider2d.bounds.size, 0f, Vector2.down, .1f, setLayerMask);
 
