@@ -7,14 +7,10 @@ public class EndOrbCollider : MonoBehaviour
 {
 
     [SerializeField] Text winText;
-    [SerializeField] Text scoreText;
-
-
 
     private void Start()
     {
-        winText.enabled = false;
-   
+        winText.enabled = false;  
     }
 
     //When orb collides with player you win.
@@ -26,12 +22,8 @@ public class EndOrbCollider : MonoBehaviour
  
             Destroy(gameObject);
             winText.enabled = true;
-            scoreText.enabled = true;
-            scoreText.fontSize = 30;
 
             Debug.Break();
-  
-
         }
     }
 }

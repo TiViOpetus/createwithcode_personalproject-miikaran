@@ -38,19 +38,13 @@ public class CountDownTimer : MonoBehaviour
         }
     }
 
-
     private void OnTriggerEnter2D(Collider2D other)
     {
 
         if (other.tag == "Player")
         {
             currentTime += 5;
-            countDownText.text = currentTime.ToString("0.0");
             Destroy(gameObject);
-
         }
-
     }
-
-
 }

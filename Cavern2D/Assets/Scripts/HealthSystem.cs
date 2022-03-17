@@ -27,11 +27,11 @@ public class HealthSystem : MonoBehaviour
     {
         if (dead == true)
         {
+            deathText.enabled = true;
             Debug.Break();
-          
+
         }
     }
-
 
     public void TakeDamage(int d)
     {
@@ -43,11 +43,8 @@ public class HealthSystem : MonoBehaviour
         }
 
         if (health < 1)
-        {
-       
-            dead = true;
-            deathText.enabled = true;
-            
+        {      
+            dead = true;          
         }
     }
 
@@ -57,10 +54,10 @@ public class HealthSystem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
- 
+
         if (other.tag == "Bullet")
         {
-            TakeDamage(1);       
+            TakeDamage(1);
         }
         else if (other.tag == "Enemy")
         {
@@ -73,7 +70,10 @@ public class HealthSystem : MonoBehaviour
         }
         else if (other.tag == "RoofSpikes")
         {
-            TakeDamage(3);
+            TakeDamage(1);
+            TakeDamage(1);
+            TakeDamage(1);
+            dead = true;
         }        
     }
 

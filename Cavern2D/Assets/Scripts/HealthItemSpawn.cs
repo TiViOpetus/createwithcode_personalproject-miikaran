@@ -9,7 +9,7 @@ public class HealthItemSpawn : MonoBehaviour
     private GameObject healthItem;
 
     [SerializeField]
-    private float itemInterval = 2f;
+    private float itemInterval = 8f;
 
 
     // Start is called before the first frame update

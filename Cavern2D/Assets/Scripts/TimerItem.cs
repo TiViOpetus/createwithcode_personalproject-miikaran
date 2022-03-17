@@ -19,10 +19,6 @@ public class TimerItem : MonoBehaviour
             currentTime += 5;
             countDownText.text = currentTime.ToString("0.0");
             Destroy(gameObject);
-
         }
-
     }
-
-
 }

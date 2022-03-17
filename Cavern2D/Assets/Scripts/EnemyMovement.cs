@@ -8,7 +8,6 @@ public class EnemyMovement : MonoBehaviour
     public float speed = 5f;
 
     [SerializeField]
-
     private GameObject player;
 
     // Start is called before the first frame update
@@ -23,13 +22,10 @@ public class EnemyMovement : MonoBehaviour
         Enemy();
     }
 
-
     //Moves to position where player is real time.
-
     private void Enemy()
     {
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
     }
-
 }
 
