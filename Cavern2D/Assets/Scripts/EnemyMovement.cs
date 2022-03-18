@@ -10,6 +10,8 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField]
     private GameObject player;
 
+    public AudioSource enemyKill;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,14 @@ public class EnemyMovement : MonoBehaviour
     private void Enemy()
     {
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Bullet")
+        {
+            enemyKill.Play();
+        }       
     }
 }
 

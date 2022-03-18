@@ -13,13 +13,13 @@ public class EndOrbCollider : MonoBehaviour
         winText.enabled = false;  
     }
 
-    //When orb collides with player you win.
+    //When orb collides with player you win and it plays win audio.
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
- 
+
             Destroy(gameObject);
             winText.enabled = true;
 

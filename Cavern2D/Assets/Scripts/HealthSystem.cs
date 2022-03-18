@@ -11,8 +11,8 @@ public class HealthSystem : MonoBehaviour
     private bool dead;
     [SerializeField] Text deathText;
 
-    public AudioSource deathAudio;
-
+    public AudioSource pickUpSound;
+    public AudioSource hitSound;
 
     private void Start()
     {
@@ -25,11 +25,11 @@ public class HealthSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (dead == true)
         {
             deathText.enabled = true;
-            Debug.Break();
-
+            Debug.Break();      
         }
     }
 
@@ -43,8 +43,8 @@ public class HealthSystem : MonoBehaviour
         }
 
         if (health < 1)
-        {      
-            dead = true;          
+        {
+            dead = true;           
         }
     }
 
@@ -61,15 +61,18 @@ public class HealthSystem : MonoBehaviour
         }
         else if (other.tag == "Enemy")
         {
+            hitSound.Play();
             TakeDamage(1);
         }
         else if (other.tag == "HealthBoost")
         {
+            pickUpSound.Play();
             HealthBoost();
             Destroy(other.gameObject);
         }
         else if (other.tag == "RoofSpikes")
         {
+        
             TakeDamage(1);
             TakeDamage(1);
             TakeDamage(1);

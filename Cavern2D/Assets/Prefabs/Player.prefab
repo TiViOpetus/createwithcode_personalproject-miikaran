@@ -152,6 +152,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   speed: 17
+  jumpAudio: {fileID: 0}
+  runAudio: {fileID: 0}
 --- !u!114 &6810602197587140758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 6810602198025597946}
   bulletPrefab: {fileID: 136629466975646158, guid: e27eb9a667c1a744caddee247d0d839c, type: 3}
+  shootAudio: {fileID: 0}
 --- !u!95 &6810602197587140764
 Animator:
   serializedVersion: 3
@@ -176,7 +179,7 @@ Animator:
   m_GameObject: {fileID: 6810602197587140757}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 74afda1080e34e94893c2611e47f5b3c, type: 2}
+  m_Controller: {fileID: 9100000, guid: a2f142c1826562d48a9cc105c81f5ece, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -203,6 +206,9 @@ MonoBehaviour:
   - {fileID: 0}
   health: 3
   deathText: {fileID: 0}
+  deathSound: {fileID: 0}
+  pickUpSound: {fileID: 0}
+  hitSound: {fileID: 0}
 --- !u!1 &6810602198025597945
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
 
     public AudioSource jumpAudio;
+    public AudioSource runAudio;
 
     // Start is called before the first frame update.
 
@@ -25,9 +26,9 @@ public class PlayerController : MonoBehaviour
 
     }
 
-
     // Players movement mechanics. with jumpVelocity you can change and adjust height of the jump.
-    // Animator variables runs sprite animations when jumping, running, falling etc.
+    // Animator variables runs sprite animations when doing different mechanics.
+    // Audio.Play activates sound effects when doing specific stuff.
 
     private void Update()
     {
@@ -46,8 +47,6 @@ public class PlayerController : MonoBehaviour
 
             jumpAudio.Play();
 
-   
-
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -60,6 +59,26 @@ public class PlayerController : MonoBehaviour
                 jumpAudio.Play();
 
             }
+        }
+
+        if (isGrounded() && Input.GetKeyDown(KeyCode.D))
+        {
+            runAudio.Play();
+        }
+
+        if (isGrounded() && Input.GetKeyDown(KeyCode.A))
+        {
+            runAudio.Play();
+        }
+
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            runAudio.Stop();
+        }
+
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            runAudio.Stop();
         }
     }
 

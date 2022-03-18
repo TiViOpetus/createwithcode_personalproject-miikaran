@@ -7,13 +7,13 @@ public class CountDownTimer : MonoBehaviour
 {
     static private float currentTime = 0f;
     private float startingTime = 45f;
-    private Animation anim;
 
     [SerializeField] Text countDownText;
     [SerializeField] Text GameOverText;
 
     void Start()
     {
+       
         currentTime = startingTime;
         GameOverText.enabled = false;
     }
@@ -24,6 +24,7 @@ public class CountDownTimer : MonoBehaviour
 
     void Update()
     {
+     
         currentTime -= 1 * Time.deltaTime;
         countDownText.text = currentTime.ToString("0.0");
 

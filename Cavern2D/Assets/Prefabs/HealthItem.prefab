@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 883016243949218067}
   - component: {fileID: 2663930736964202197}
   - component: {fileID: 607440530}
-  - component: {fileID: 3438715917752445630}
+  - component: {fileID: 1373309432}
   m_Layer: 0
   m_Name: HealthItem
   m_TagString: HealthBoost
@@ -125,7 +125,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.68, y: 1.6986187}
   m_EdgeRadius: 0
---- !u!95 &3438715917752445630
+--- !u!95 &1373309432
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0

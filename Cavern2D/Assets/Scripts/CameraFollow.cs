@@ -11,6 +11,7 @@ public class CameraFollow : MonoBehaviour
     private void FixedUpdate()
     {
         camFollow();
+       
     }
 
 

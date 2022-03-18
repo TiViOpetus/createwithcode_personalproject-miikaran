@@ -20,7 +20,6 @@ public class PlayerShoot : MonoBehaviour
 			shootAudio.Play();
 		}
 	}
-
 	
 	//When shoot it spawns bulletPrab to the position of firepoint.
 	void Shoot()

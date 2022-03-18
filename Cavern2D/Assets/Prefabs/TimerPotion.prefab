@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 1180945048}
   - component: {fileID: 680123404034602711}
   - component: {fileID: 1737728390}
+  - component: {fileID: 1326840970}
   m_Layer: 0
   m_Name: TimerPotion
-  m_TagString: Untagged
+  m_TagString: TimerBoost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,6 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countDownText: {fileID: 0}
   GameOverText: {fileID: 0}
+  timerSound: {fileID: 0}
 --- !u!114 &680123404034602711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countDownText: {fileID: 0}
   GameOverText: {fileID: 0}
+  pickUpSound: {fileID: 0}
 --- !u!114 &1737728390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,3 +157,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerItem: {fileID: 8004068124767259167}
   itemInterval: 2
+--- !u!95 &1326840970
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8004068124767259167}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f0f2279c62a2b1a4181de13d8ce6a2ab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
