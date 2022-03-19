@@ -14,6 +14,7 @@ public class HealthSystem : MonoBehaviour
     public AudioSource pickUpSound;
     public AudioSource hitSound;
 
+    public ParticleSystem pickupEffect;
     private void Start()
     {
         health = 3;
@@ -69,6 +70,7 @@ public class HealthSystem : MonoBehaviour
             pickUpSound.Play();
             HealthBoost();
             Destroy(other.gameObject);
+            PickupEffect();
         }
         else if (other.tag == "RoofSpikes")
         {
@@ -93,5 +95,11 @@ public class HealthSystem : MonoBehaviour
       
         }
     }
+
+    private void PickupEffect()
+    {
+        GameObject.Instantiate(pickupEffect, transform.position, Quaternion.identity);
+    }
 }
+
 

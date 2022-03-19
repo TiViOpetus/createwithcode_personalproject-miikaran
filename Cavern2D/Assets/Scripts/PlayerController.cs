@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private float moveInput;
     public float speed = 15f;
     bool doubleJump;
+
     private Animator animator;
 
     public AudioSource jumpAudio;
@@ -65,17 +66,14 @@ public class PlayerController : MonoBehaviour
         {
             runAudio.Play();
         }
-
         if (isGrounded() && Input.GetKeyDown(KeyCode.A))
         {
             runAudio.Play();
         }
-
         if (Input.GetKeyUp(KeyCode.D))
         {
             runAudio.Stop();
         }
-
         if (Input.GetKeyUp(KeyCode.A))
         {
             runAudio.Stop();

@@ -206,9 +206,9 @@ MonoBehaviour:
   - {fileID: 0}
   health: 3
   deathText: {fileID: 0}
-  deathSound: {fileID: 0}
   pickUpSound: {fileID: 0}
   hitSound: {fileID: 0}
+  pickupEffect: {fileID: 0}
 --- !u!1 &6810602198025597945
 GameObject:
   m_ObjectHideFlags: 0

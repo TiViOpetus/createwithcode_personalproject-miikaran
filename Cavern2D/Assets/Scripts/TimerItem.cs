@@ -12,6 +12,8 @@ public class TimerItem : MonoBehaviour
 
     public AudioSource pickUpSound;
 
+    public ParticleSystem pickupEffect;
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,7 +23,14 @@ public class TimerItem : MonoBehaviour
             pickUpSound.Play();
             currentTime += 5;
             countDownText.text = currentTime.ToString("0.0");
+            PickupEffect();
             Destroy(gameObject);
+          
         }
+    }
+
+    private void PickupEffect()
+    {
+        GameObject.Instantiate(pickupEffect, transform.position, Quaternion.identity);
     }
 }

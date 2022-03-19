@@ -5,12 +5,14 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
 
-    public float speed = 5f;
+    public float speed = 12f;
 
     [SerializeField]
     private GameObject player;
 
     public AudioSource enemyKill;
+
+    public ParticleSystem enemyExplosion;
 
     // Start is called before the first frame update
     void Start()
@@ -30,12 +32,22 @@ public class EnemyMovement : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
     }
 
+
+    //When enemy collides with bullet, it runs kill audio + EnemyDeath function.
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Bullet")
         {
             enemyKill.Play();
+            EnemyDeath();
         }       
+    }
+
+    // Activates particle explosion at the position of enemy.
+    private void EnemyDeath()
+    {
+        GameObject.Instantiate(enemyExplosion, transform.position, Quaternion.identity);
     }
 }
 

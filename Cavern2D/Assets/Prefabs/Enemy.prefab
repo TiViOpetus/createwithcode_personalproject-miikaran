@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyPrefab: {fileID: 3839668678690523953}
-  EnemyInterval: 1
+  EnemyInterval: 0.7
 --- !u!114 &271642248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,9 +165,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e677fc9208428aa45bc6c333ba454f3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 12
   player: {fileID: 6810602197587140757, guid: 847e4ad77bdfa5b4a96115db426a8433, type: 3}
   enemyKill: {fileID: 0}
+  enemyExplosion: {fileID: 0}
 --- !u!222 &4478547630744216278
 CanvasRenderer:
   m_ObjectHideFlags: 0
