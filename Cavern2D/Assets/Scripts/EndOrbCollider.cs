@@ -7,10 +7,11 @@ public class EndOrbCollider : MonoBehaviour
 {
 
     [SerializeField] Text winText;
+    public GameObject restartScreen;
 
     private void Start()
     {
-        winText.enabled = false;  
+ 
     }
 
     //When orb collides with player you win and it plays win audio.
@@ -21,9 +22,10 @@ public class EndOrbCollider : MonoBehaviour
         {
 
             Destroy(gameObject);
-            winText.enabled = true;
+            winText.gameObject.SetActive(true);
+            restartScreen.gameObject.SetActive(true);
+            Time.timeScale = 0;
 
-            Debug.Break();
         }
     }
 }

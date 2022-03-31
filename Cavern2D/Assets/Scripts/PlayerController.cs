@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
 
         animator = GetComponent<Animator>();
         rigidBody2d = GetComponent<Rigidbody2D>();
-        boxCollider2d = transform.GetComponent<BoxCollider2D>();
+        boxCollider2d = transform.GetComponent<BoxCollider2D>();   
 
     }
 
@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
         if (isGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
         
-            float jumpVelocity = 25f;
+            float jumpVelocity = 30f;
             rigidBody2d.velocity = Vector2.up * jumpVelocity;
             doubleJump = true;
 
@@ -66,15 +66,15 @@ public class PlayerController : MonoBehaviour
         {
             runAudio.Play();
         }
-        if (isGrounded() && Input.GetKeyDown(KeyCode.A))
+        else if (isGrounded() && Input.GetKeyDown(KeyCode.A))
         {
             runAudio.Play();
         }
-        if (Input.GetKeyUp(KeyCode.D))
+        else if (Input.GetKeyUp(KeyCode.D))
         {
             runAudio.Stop();
         }
-        if (Input.GetKeyUp(KeyCode.A))
+        else if (Input.GetKeyUp(KeyCode.A))
         {
             runAudio.Stop();
         }

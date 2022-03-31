@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class HealthSystem : MonoBehaviour
     public int health;
     private int maxHealth;
     private bool dead;
+    public GameObject restartScreen;
     [SerializeField] Text deathText;
 
     public AudioSource pickUpSound;
@@ -17,9 +19,9 @@ public class HealthSystem : MonoBehaviour
     public ParticleSystem pickupEffect;
     private void Start()
     {
-        health = 3;
+        health = 5;
         maxHealth = health;
-        deathText.enabled = false;
+        Time.timeScale = 1;
     }
 
 
@@ -30,7 +32,9 @@ public class HealthSystem : MonoBehaviour
         if (dead == true)
         {
             deathText.enabled = true;
-            Debug.Break();      
+            Time.timeScale = 0;
+            restartScreen.gameObject.SetActive(true);
+            deathText.gameObject.SetActive(true);
         }
     }
 
@@ -59,22 +63,25 @@ public class HealthSystem : MonoBehaviour
         if (other.tag == "Bullet")
         {
             TakeDamage(1);
+            hitSound.Play();
         }
         else if (other.tag == "Enemy")
         {
-            hitSound.Play();
             TakeDamage(1);
+            hitSound.Play();
         }
         else if (other.tag == "HealthBoost")
         {
-            pickUpSound.Play();
             HealthBoost();
             Destroy(other.gameObject);
             PickupEffect();
+            pickUpSound.Play();
         }
         else if (other.tag == "RoofSpikes")
         {
         
+            TakeDamage(1);
+            TakeDamage(1);
             TakeDamage(1);
             TakeDamage(1);
             TakeDamage(1);
@@ -96,10 +103,20 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
+    //Instantiates particle effect to the position of the item.
     private void PickupEffect()
     {
         GameObject.Instantiate(pickupEffect, transform.position, Quaternion.identity);
     }
+
+    //When this function is called, it restarts the whole scene.
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
+
+
+
 
 

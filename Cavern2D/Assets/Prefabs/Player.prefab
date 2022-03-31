@@ -204,7 +204,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  health: 3
+  - {fileID: 0}
+  - {fileID: 0}
+  health: 5
+  restartScreen: {fileID: 0}
   deathText: {fileID: 0}
   pickUpSound: {fileID: 0}
   hitSound: {fileID: 0}

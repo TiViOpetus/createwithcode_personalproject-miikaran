@@ -6,16 +6,16 @@ using UnityEngine.UI;
 public class CountDownTimer : MonoBehaviour
 {
     static private float currentTime = 0f;
-    private float startingTime = 45f;
+    private float startingTime = 62f;
 
     [SerializeField] Text countDownText;
     [SerializeField] Text GameOverText;
 
+    public GameObject restartScreen;
+
     void Start()
-    {
-       
+    {     
         currentTime = startingTime;
-        GameOverText.enabled = false;
     }
 
 
@@ -33,9 +33,9 @@ public class CountDownTimer : MonoBehaviour
         {
             countDownText.color = Color.red;
             currentTime = 0;
-            GameOverText.enabled = true;
-
-            Debug.Break();
+            GameOverText.gameObject.SetActive(true);
+            Time.timeScale = 0;
+            restartScreen.gameObject.SetActive(true);
         }
     }
 

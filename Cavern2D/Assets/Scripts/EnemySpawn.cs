@@ -29,7 +29,7 @@ public class EnemySpawn : MonoBehaviour
 
         yield return new WaitForSeconds(interval);
 
-        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(50f, 300f), Random.Range(50, 125f), 0), Quaternion.identity);
+        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(50f, 300f), Random.Range(50, 150f), 0), Quaternion.identity);
       
    
     }

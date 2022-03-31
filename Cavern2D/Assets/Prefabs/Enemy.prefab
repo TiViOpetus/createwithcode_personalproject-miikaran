@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyPrefab: {fileID: 3839668678690523953}
-  EnemyInterval: 0.7
+  EnemyInterval: 5
 --- !u!114 &271642248
 MonoBehaviour:
   m_ObjectHideFlags: 0
