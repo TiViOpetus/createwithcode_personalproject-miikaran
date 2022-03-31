@@ -14,7 +14,7 @@ public class EndOrbCollider : MonoBehaviour
  
     }
 
-    //When orb collides with player you win and it plays win audio.
+    //When orb collides with player you win.
 
     void OnTriggerEnter2D(Collider2D other)
     {

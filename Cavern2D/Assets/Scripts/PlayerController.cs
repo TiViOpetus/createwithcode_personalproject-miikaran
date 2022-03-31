@@ -62,6 +62,8 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        // Sound effects for running.
+
         if (isGrounded() && Input.GetKeyDown(KeyCode.D))
         {
             runAudio.Play();
@@ -83,7 +85,6 @@ public class PlayerController : MonoBehaviour
 
     // isGrounded prevents you from jumping while in air. You can jump again only when you've landed.
     // Only way to jump while in air is by doubleJumping.
-
 
     private bool isGrounded()
     {

@@ -39,6 +39,8 @@ public class CountDownTimer : MonoBehaviour
         }
     }
 
+
+    //Adds time to timer when you pickup a specific item.
     private void OnTriggerEnter2D(Collider2D other)
     {
 

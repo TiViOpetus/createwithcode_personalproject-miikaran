@@ -15,20 +15,22 @@ public class TimerItem : MonoBehaviour
     public ParticleSystem pickupEffect;
 
 
+    //When you pickup timer item it adds time to timer and activates other effects.
+
     private void OnTriggerEnter2D(Collider2D other)
     {
 
         if (other.tag == "Player")
         {
-            pickUpSound.Play();
             currentTime += 5;
             countDownText.text = currentTime.ToString("0.0");
             PickupEffect();
-            Destroy(gameObject);
-          
+            pickUpSound.Play();
+            Destroy(gameObject);         
         }
     }
 
+    //Item pickup effect instatiates at the position of the item.
     private void PickupEffect()
     {
         GameObject.Instantiate(pickupEffect, transform.position, Quaternion.identity);

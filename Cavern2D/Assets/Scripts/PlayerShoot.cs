@@ -19,7 +19,7 @@ public class PlayerShoot : MonoBehaviour
     }
 
     // Update is called once per frame
-	// If you press mousebutton, it shoots a
+	// If you press mousebutton, it shoots.
     void Update()
 	{
 
