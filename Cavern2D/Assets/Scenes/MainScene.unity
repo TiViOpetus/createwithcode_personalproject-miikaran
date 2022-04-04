@@ -879,6 +879,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2140750705}
+    - target: {fileID: 607664005, guid: d2fd58a2345285c43a3b120cfb651e3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 670153541, guid: d2fd58a2345285c43a3b120cfb651e3e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -16668,6 +16672,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1946393241 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5535063919382547248, guid: d2fd58a2345285c43a3b120cfb651e3e, type: 3}
+  m_PrefabInstance: {fileID: 881266723}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2003643372
 GameObject:
   m_ObjectHideFlags: 0
@@ -17193,14 +17208,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 271642247, guid: 8f01edfea1c050040a9af78bf533d30c, type: 3}
-      propertyPath: EnemyInterval
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 271642248, guid: 8f01edfea1c050040a9af78bf533d30c, type: 3}
-      propertyPath: speed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 271642248, guid: 8f01edfea1c050040a9af78bf533d30c, type: 3}
       propertyPath: enemyKill
       value: 
@@ -17301,6 +17308,10 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1878098291}
+    - target: {fileID: 5154720869405650919, guid: 8f01edfea1c050040a9af78bf533d30c, type: 3}
+      propertyPath: restartScreenScore
+      value: 
+      objectReference: {fileID: 1946393241}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f01edfea1c050040a9af78bf533d30c, type: 3}
 --- !u!1001 &5729639662959418691
