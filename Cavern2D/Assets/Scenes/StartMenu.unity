@@ -238,7 +238,6 @@ GameObject:
   - component: {fileID: 94122331}
   - component: {fileID: 94122330}
   - component: {fileID: 94122333}
-  - component: {fileID: 94122334}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -374,25 +373,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 3.28, y: -1}
   m_UseGraphicAlpha: 1
---- !u!95 &94122334
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 94122328}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 77ed6813c959aff4dbafcfd97bbb4b23, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &108913156
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,7 +383,6 @@ GameObject:
   m_Component:
   - component: {fileID: 108913157}
   - component: {fileID: 108913158}
-  - component: {fileID: 108913159}
   m_Layer: 0
   m_Name: TimerPotion
   m_TagString: Untagged
@@ -476,25 +455,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &108913159
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108913156}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 50667340fb4643f4a90d43c2cd027887, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &260597113
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,7 +605,6 @@ GameObject:
   m_Component:
   - component: {fileID: 376509800}
   - component: {fileID: 376509801}
-  - component: {fileID: 376509802}
   m_Layer: 0
   m_Name: SpriteScope
   m_TagString: Untagged
@@ -718,25 +677,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &376509802
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376509799}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 80fa6df4a1201d8499625087ae427f2d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &429556310
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,7 +755,6 @@ GameObject:
   - component: {fileID: 812048266}
   - component: {fileID: 812048265}
   - component: {fileID: 812048264}
-  - component: {fileID: 812048267}
   m_Layer: 5
   m_Name: GameTitle
   m_TagString: Untagged
@@ -899,25 +838,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812048262}
   m_CullTransparentMesh: 1
---- !u!95 &812048267
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812048262}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 09d8f645aa856a04586b0a6fa46cc919, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1115180250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,7 +1047,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1358780143}
   - component: {fileID: 1358780145}
-  - component: {fileID: 1358780144}
   m_Layer: 0
   m_Name: HealthPotion
   m_TagString: Untagged
@@ -1149,25 +1068,6 @@ Transform:
   m_Father: {fileID: 260597117}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
---- !u!95 &1358780144
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358780142}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 143c958afe5d9584a83d234b0e695df6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &1358780145
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1229,7 +1129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1459022769}
   - component: {fileID: 1459022768}
-  - component: {fileID: 1459022770}
   m_Layer: 0
   m_Name: FallenSprite
   m_TagString: Untagged
@@ -1302,25 +1201,6 @@ Transform:
   m_Father: {fileID: 260597117}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1459022770
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459022767}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f71f81f937721f8458636eb46336376d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1667635997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,7 +1211,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1667635998}
   - component: {fileID: 1667635999}
-  - component: {fileID: 1667636000}
   m_Layer: 0
   m_Name: GunFire
   m_TagString: Untagged
@@ -1404,25 +1283,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1667636000
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1667635997}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1417dcce27697de4eafd66fb18829d41, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1679747410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,7 +1295,6 @@ GameObject:
   - component: {fileID: 1679747415}
   - component: {fileID: 1679747414}
   - component: {fileID: 1679747413}
-  - component: {fileID: 1679747412}
   - component: {fileID: 1679747416}
   m_Layer: 5
   m_Name: StartButton
@@ -1463,25 +1322,6 @@ RectTransform:
   m_AnchoredPosition: {x: 10.47, y: -159.86}
   m_SizeDelta: {x: 199.0815, y: 48.0376}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &1679747412
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679747410}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 506283a6a728145469cc72bb9ea56ede, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1679747413
 MonoBehaviour:
   m_ObjectHideFlags: 0

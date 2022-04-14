@@ -114,6 +114,12 @@ public class HealthSystem : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public void QuitGame()
+    {
+        SceneManager.LoadScene("StartMenu");
+    }
+
 }
 
 

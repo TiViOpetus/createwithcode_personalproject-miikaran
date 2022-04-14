@@ -127,6 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countDownText: {fileID: 0}
   GameOverText: {fileID: 0}
+  restartScreen: {fileID: 0}
 --- !u!114 &680123404034602711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerItem: {fileID: 8004068124767259167}
-  itemInterval: 10
+  itemInterval: 7
 --- !u!95 &1326840970
 Animator:
   serializedVersion: 3

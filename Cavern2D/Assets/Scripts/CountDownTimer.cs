@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CountDownTimer : MonoBehaviour
 {
     static private float currentTime = 0f;
-    private float startingTime = 62f;
+    private float startingTime = 60f;
 
     [SerializeField] Text countDownText;
     [SerializeField] Text GameOverText;
